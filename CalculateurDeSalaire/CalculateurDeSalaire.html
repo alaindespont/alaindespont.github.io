@@ -3,7 +3,7 @@
 <head>
 <title>Calculateur de salaire</title>
 
-
+<script src="script.js" type="text/javascript"></script>
 <style>
 	
 	body {
@@ -84,7 +84,7 @@
 	color:white;
 	font-size:large;
 	}
-	#resultat #pourcentactivité {
+	#resultat #pourcentactivitÃ© {
 	color:white;
 	font-size:large;
 	}
@@ -109,10 +109,10 @@ function calculSalaire() {
 	// Comme elles peuvent changer, on les garde en haut.
 	
 	// Variables du calcul du salaire brut
-	var TauxSemaine = 137.15; // Somme en franc pour une journée complète.
-	var TauxWeekend = 153; // Somme en franc pour une journée complète.
-	var TauxHeuressup = 21.1; // Somme en franc pour une heure supplémentaire.
-	var Vacances = 8.33; // Pourcentage calculé sur le total du salaire "brut"
+	var TauxSemaine = 137.15; // Somme en franc pour une journÃ©e complÃ¨te.
+	var TauxWeekend = 153; // Somme en franc pour une journÃ©e complÃ¨te.
+	var TauxHeuressup = 21.1; // Somme en franc pour une heure supplÃ©mentaire.
+	var Vacances = 8.33; // Pourcentage calculÃ© sur le total du salaire "brut"
 
 	// Variables du calcul du salaire net
 	var AVS = 5.125; // Pourcentage
@@ -120,25 +120,25 @@ function calculSalaire() {
 	var LAA = 1.25;// Pourcentage
 	var LPP = 24; // Somme en franc
 
-	// Variables du calcul du pourcentage d'activité 
+	// Variables du calcul du pourcentage d'activitÃ© 
 	var HeuresSemaine = 6.5;
 	var HeuresWeekend = 7.25;
-	var HeuresSupp = 1; // Ajouté après un bug ou les heures supp étaient comptées en centième et le compteur passait aux milliers de pourcent passé un certain cap.
-	var UnPourCent = 1.33; //1 heure 33 représente 1% d'activité basée sur un 60% équivalent à 80h par mois.
+	var HeuresSupp = 1; // AjoutÃ© aprÃ¨s un bug ou les heures supp Ã©taient comptÃ©es en centiÃ¨me et le compteur passait aux milliers de pourcent passÃ© un certain cap.
+	var UnPourCent = 1.33; //1 heure 33 reprÃ©sente 1% d'activitÃ© basÃ©e sur un 60% Ã©quivalent Ã  80h par mois.
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //SALAIRE BRUT//////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	// On récupère le nombre de jours de travail et d'heures supp envoyé par l'utilisateur
-	// on ajoute leur valeur à des variables utilisées pour le calcul
-	// afin de ne pas mélanger les variables envoyées par l'utilisateur et les variables javascript
+	// On rÃ©cupÃ¨re le nombre de jours de travail et d'heures supp envoyÃ© par l'utilisateur
+	// on ajoute leur valeur Ã  des variables utilisÃ©es pour le calcul
+	// afin de ne pas mÃ©langer les variables envoyÃ©es par l'utilisateur et les variables javascript
 
 	Jours_Semaine = document.getElementById("NBR_Semaine").value;
 	Jours_Week = document.getElementById("NBR_Week").value;
 	Jours_Supp = document.getElementById("NBR_Supp").value;
 	
-	// On créé les variables qui serviront au calcul, et on calcule le salaire brut.
+	// On crÃ©Ã© les variables qui serviront au calcul, et on calcule le salaire brut.
 	var SalaireSemaine = Jours_Semaine * TauxSemaine;
 	var SalaireWeek = Jours_Week * TauxWeekend;
 	var SalaireSupp = Jours_Supp * TauxHeuressup;
@@ -155,13 +155,13 @@ function calculSalaire() {
 //SALAIRE NET///////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 
-	// On calcul a présent les différentes charges sociales :
+	// On calcul a prÃ©sent les diffÃ©rentes charges sociales :
 	var Deduc_AVS = SalaireTotalBrut * AVS / 100;
 	var Deduc_Chomage = SalaireTotalBrut * Chomage / 100;
 	var Deduc_LAA = SalaireTotalBrut * LAA / 100;
 	
 
-	// La LPP étant une somme dépendant du salaire, on fait un petit calcul (A vérifier)
+	// La LPP Ã©tant une somme dÃ©pendant du salaire, on fait un petit calcul (A vÃ©rifier)
 	
 	if (SalaireTotalBrut < 2500){
 	LPP = 15;
@@ -175,17 +175,17 @@ function calculSalaire() {
 		
 
 
-	// On calcule a le salaire net en déduisant les variables calculées précédemment
+	// On calcule a le salaire net en dÃ©duisant les variables calculÃ©es prÃ©cÃ©demment
 	var SalaireTotalNet = SalaireTotalBrut - Deduc_AVS - Deduc_Chomage - Deduc_LAA - LPP;
 
-	// On affiche les valeurs des déductions
+	// On affiche les valeurs des dÃ©ductions
 	document.getElementById("cotisationAVS").innerHTML = "<i>Assurance Viellesse et Survivants (AVS) :</i> -" + (0.05*Math.round(Deduc_AVS/0.05)).toFixed(2) +" CHF";
-	document.getElementById("cotisationChomage").innerHTML = "<i>Assurance chômage (AC) :</i> -" + (0.05*Math.round(Deduc_Chomage/0.05)).toFixed(2) +" CHF";
+	document.getElementById("cotisationChomage").innerHTML = "<i>Assurance chÃ´mage (AC) :</i> -" + (0.05*Math.round(Deduc_Chomage/0.05)).toFixed(2) +" CHF";
 	document.getElementById("cotisationLAA").innerHTML = "<i>Assurance accident (LAA) :</i> -" + (0.05*Math.round(Deduc_LAA/0.05)).toFixed(2) +" CHF";
-	document.getElementById("cotisationLPP").innerHTML = "<i>Prévoyance professionelle (LPP) :</i> -" + (0.05*Math.round(LPP/0.05)).toFixed(2) +" CHF";
+	document.getElementById("cotisationLPP").innerHTML = "<i>PrÃ©voyance professionelle (LPP) :</i> -" + (0.05*Math.round(LPP/0.05)).toFixed(2) +" CHF";
 
 
-	// Finalement on affiche le salaire net et on affiche le bloc des résultats.
+	// Finalement on affiche le salaire net et on affiche le bloc des rÃ©sultats.
 	document.getElementById("salairenet").innerHTML = (0.05*Math.round(SalaireTotalNet/0.05)).toFixed(2) +" CHF";
 	document.getElementById('resultat').style.display = "block";
 
@@ -194,20 +194,20 @@ function calculSalaire() {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 
-	// On vérifie a présent si l'utilisateur à choisi de voir son pourcentage d'activité.
-	// Si il a coché la case (CHECKED) on lance le calcul, sinon il ne se passe rien.
+	// On vÃ©rifie a prÃ©sent si l'utilisateur Ã  choisi de voir son pourcentage d'activitÃ©.
+	// Si il a cochÃ© la case (CHECKED) on lance le calcul, sinon il ne se passe rien.
 
 	if (document.getElementById("pourcentageCheck").checked){
 		var TotalHeuresSemaine = Jours_Semaine * HeuresSemaine;
 		var TotalHeuresWeekend = Jours_Week * HeuresWeekend;
 		var TotalHeuresSupp = Jours_Supp * HeuresSupp
 		var TotalSemWeekSupp = TotalHeuresSemaine + TotalHeuresWeekend + TotalHeuresSupp;
-		var PourcentageActivité = TotalSemWeekSupp / UnPourCent;
+		var PourcentageActivitÃ© = TotalSemWeekSupp / UnPourCent;
 		
 		// On affiche le pourcentage et on affiche le block qui le contient.
-		document.getElementById("pourcentactivité").innerHTML = Math.round(PourcentageActivité) + '%';
-		document.getElementById('pourcentactivité').style.display = "block";
-		document.getElementById('pourcentactivitétext').style.display = "block";
+		document.getElementById("pourcentactivitÃ©").innerHTML = Math.round(PourcentageActivitÃ©) + '%';
+		document.getElementById('pourcentactivitÃ©').style.display = "block";
+		document.getElementById('pourcentactivitÃ©text').style.display = "block";
 	}
 };
 
@@ -234,7 +234,7 @@ function reset() {
 		
 		<center><h1>Calculateur de salaire</h1></center>
 		<ul>
-		<li>Les données sont à titre indicatif et ne remplaceront pas votre vraie fiche de salaire.</li>
+		<li>Les donnÃ©es sont Ã  titre indicatif et ne remplaceront pas votre vraie fiche de salaire.</li>
 		</ul>
 		</div>	
 	</div>
@@ -242,7 +242,7 @@ function reset() {
 	
 	<div class="contenu" id"formulaire">
 		<div id="explications">
-		Inscrivez les données qui vous sont demandées afin que le programme calcule votre salaire.
+		Inscrivez les donnÃ©es qui vous sont demandÃ©es afin que le programme calcule votre salaire.
 		</div>
 
 		<form id="calculateur">
@@ -252,10 +252,10 @@ function reset() {
 		<p style="font-weight:bold;" >Jours de travail en week-end. (Ve-Sa).</p>
 		<input type="number" min="0" max="30" maxlength="2" id="NBR_Week" value="0">
 
-		<p style="font-weight:bold;" >Les heures supplémentaires.</p>
+		<p style="font-weight:bold;" >Les heures supplÃ©mentaires.</p>
 		<input type="number" min="0" max="30" maxlength="2" id="NBR_Supp" value="0">
 
-		<p style="font-weight:bold;" >Souhaitez vous calculer votre pourcentage d'activité ?</p>
+		<p style="font-weight:bold;" >Souhaitez vous calculer votre pourcentage d'activitÃ© ?</p>
 		<input type="checkbox" id="pourcentageCheck">Oui</br></br>
 		<input type="button" value="Calculer mon salaire" onClick="calculSalaire()">
 		</form>
@@ -265,7 +265,7 @@ function reset() {
 
 
 
-<!-- Le bloc de résultat ne s'affiche qu'une fois l'opération de calcul lancée.  -->
+<!-- Le bloc de rÃ©sultat ne s'affiche qu'une fois l'opÃ©ration de calcul lancÃ©e.  -->
 	<div class="contenu" id="resultat">
 
 
@@ -288,8 +288,8 @@ function reset() {
 		<p><b>Salaire net :</b></p>
 		<p id="salairenet"></p>
 
-		<p class="pourcentage" id="pourcentactivitétext"><b>Pourcentage d'activité :</b></p>
-		<p class="pourcentage" id="pourcentactivité"></p>
+		<p class="pourcentage" id="pourcentactivitÃ©text"><b>Pourcentage d'activitÃ© :</b></p>
+		<p class="pourcentage" id="pourcentactivitÃ©"></p>
 		<input type="button" value="Reset" onClick="reset()">
 	</div>
 
@@ -299,12 +299,12 @@ function reset() {
 
 		
 	<div class="contenu" id="footer">
-	<p>Ce script à été conçu par Alain Despont.</br> Dernière m.a.j : Octobre 2016.</p>
+	<p>Ce script Ã  Ã©tÃ© conÃ§u par Alain Despont.</br> DerniÃ¨re m.a.j : Octobre 2016.</p>
 	</div>
 
 <!-- Mai 16 : Premier version -->
 <!-- Oct. 16 : Correction d'un bug qui donnait une valeur LPP de 0 -->
-<!-- Oct. 16 : Ajout des deductions sociales à la fiche. -->
+<!-- Oct. 16 : Ajout des deductions sociales Ã  la fiche. -->
 
 
 	
