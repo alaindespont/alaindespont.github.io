@@ -1,49 +1,50 @@
 <html>
+<head></head>
 <style>
-ul.li {
+
+
+div.intro{
+background-color: #d4d4d4;
+max-width:800px;
 width:100%;
-padding:0px;
-padding-left: 15px;
-margin-top:10px;
-float:left;
-border:0;
-border-radius: 5px;
-list-style-type: none;
-font-size: 1em;
-color:black;
+border-radius: 10px;
+padding:20px;
+line-height: 200%;
+margin:auto;
 }
 
-p{
+.uber-container{
+    width:800px;
+    margin:auto;
+}
+.container{
+width:100%;
+float:left;
+height:auto;
+margin-top:20px;
 
-    border-radius: 10px;
-    color: black;
-    background-color: #ff9400;
-    font-size: 1.5em;
+}
+
+li.categorie{
+    width:20%;
+    float:left;
+    list-style: None;
     padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    border:1px solid transparent;
+    background-color: antiquewhite;
+height:150px;
 }
 
 h1{
-    border-radius: 10px;
-    color: black;
-    background-color: #ff9400;
+    background-color: #d4d4d4;
     padding: 20px;
+    border-radius: 20px;
 }
 
-h1.start {
-    background-color:transparent;
-    padding: 0px;
-}
+.container a, li.categorie a{
 
-.explication{
-
-    background-color:transparent;
-}
-ul.liencategories{
-padding-left: 0px;
-}
-
-li.categorie a{
-    font-size: x-large;
     font-weight: 700;
     border: 1px solid black;
     padding: 5px;
@@ -52,136 +53,131 @@ li.categorie a{
     text-decoration: none;
     color: black;
     cursor: pointer;
+  float:left;
+  margin:5px;
+  width: 80%;
+  text-align:center;
 }
 
-p.explication a.button{
+.container a{
+    width:200px;
+    margin-top:20px;
+}
+
+.container a:hover{
+    background-color:#ffe2bb;
+}
+
+li.categorie:hover{
+border:black 1px solid;
+background-color:#ffe2bb;
+}
+
+li.categorie a:hover{
     background-color: #ff9400;
-    border: 1px solid black;
-    color: black;
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 5px;
-    text-decoration: none;
 }
 
-li.categorie a:hover, p.explication a.button:hover{
-background-color:#bdff07;
+.explication{
+padding-top:50px;
+
 }
 
-ul.li a{
-font-weight:700;
-padding:0;
-background-color:transparent;
-border:0;
-padding-left: 10px;
-}
-
-.categorie{
-
-background-color:#d4d4d4;
-    border-radius: 10px;
-    margin: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    list-style: none;
-    border-left: 10px solid black;
-}
-
-div.intro{
-
-    background-color: #d4d4d4;
-    border-radius: 10px;
-    padding:20px;
-    line-height: 200%;
-}
 </style>
 <body>
 
+    <div class="intro">
+        <h1 class="start">PORTFOLIO</h1>
+        <div class="container">
+        <a href="https://github.com/alaindespont?tab=repositories">Repositories GitHub</a>
+        <a href="https://github.com/alaindespont/AD-Curriculum/blob/main/DESPONT_Alain_CurriculumVitae.pdf">Curriculum Vitae</a>
+        <a href="https://alaindespont.wordpress.com/">Site Wordpress</a>.
+        </div>
+    </div>
+<div class="uber-container"> <!--UberContainer-->
 
-<div class="intro">
-<h1 class="start">Portfolio</h1>
-<p class="explication"> Bienvenue sur ce petit portfolio.
-</br>Vous y trouverez quelques projets extraits de mes <a class="button" href="https://github.com/alaindespont?tab=repositories">repositories GitHub</a>, que vous pourrez tester en direct.
-</br>Pour les scripts que vous ne pourrez pas tester, vous pourrez trouver un lien vers une vidéo YouTube explicative.
-</br>Finalement vous pouvez lire mon <a class="button" href="https://github.com/alaindespont/AD-Curriculum/blob/main/DESPONT_Alain_CurriculumVitae.pdf">Curriculum Vitae</a>, et visiter mon  <a class="button" href="https://alaindespont.wordpress.com/">site principal</a>.
+
+
+
+
+<div class="container">
+    <h1>Scripts PowerShell (en vidéo youtube)</h1>
+    <ul>
+        <li class="categorie"><a href="https://youtu.be/sxFI3Qp2sNA">Test de connectivité</a>
+            <p class="explication">Permet un diagnostique rapide de la connectivité réseau.</p>
+            </li>
+    <li class="categorie"><a href="https://youtu.be/egR4FQxxT3c">Listing Programmes Installés</a>
+    <p class="explication">Extrait une liste des programmes installés.</p>
+    </li>
+    <li class="categorie"><a href="https://youtu.be/tMxIxuDQhos">PreviewsVideos</a>
+    <p class="explication">Permet de découper des vidéos en vidéos plus petites, pour reposter sur des réseaux sociaux.</p>
+    </li>
+    <li class="categorie"><a href="https://youtu.be/LmUIn0TPrWU">Backup To USB</a>
+    <p class="explication">Permet de copier des fichiers d'une clé USB sur un autre support.</p>
+    </li>
+</ul>
 </div>
 
-<!-- Le menu commence-->
-<nav id="MENUCOTE">
-<ul class="menuHaut2">
 
-<h1>Scripts POWERSHELLS (en vidéo)</h1>
-<ul class="liencategories">
+<!--Categorie-->
+<div class="container">
+    <h1>Web (a essayer directement)</h1>
+    <ul class="liencategories">
+    <li class="categorie"><a href="/CalculateurDeSalaire/CalculateurDeSalaire.html">Calculateur de salaire</a>
+        <p class="explication">Calculateur de salaire pour employé.</p>
+        </li>
+        
+        <li class="categorie"><a href="/EasyConnect/EasyConnect.html">EasyConnect</a>
+        <p class="explication">Dashboard de liens internet.</p>
+        </li>
+        
+        <li class="categorie"><a href="/LesMainsEtLame/index.html">Les Mains et l'Ame</a>
+        <p class="explication">Projet de page web statique, pour une cliente privée.</p>
+        </li>
+        
+        <li class="categorie"><a href="/MoteurRechercheMultisite/index.html">Moteur de recherche multi-site</a>
+        <p class="explication">Utilitaire de recherche.</p>
+        </li>
+        
+        <li class="categorie"><a href="/Stargate/index.html">Stargate</a>
+        <p class="explication">Recréation de la Porte des étoiles de la série de science-fiction.</b></p>
+        </li>
+        
+        <li class="categorie"><a href="/SystemeSolaire/index.html">Systeme Solaire</a>
+        <p class="explication">Simulation du système solaire.</p>
+        </li>
+    </ul>
+    </div>
+    <!--Fin de categorie-->
 
-<li class="categorie"><a href="https://youtu.be/sxFI3Qp2sNA">Test de connectivité</a>
-<p class="explication">Permet un diagnostique rapide de la connectivité réseau</p>
-</li>
 
-<li class="categorie"><a href="https://youtu.be/egR4FQxxT3c">Listing Programmes Installés</a>
-<p class="explication">Extrait une liste des programmes installés et produit deux listes distinctes : une contenant les programmes non-microsoft, et l'autre les programmes Microsoft.</p>
-</li>
- <li class="categorie"><a href="https://youtu.be/tMxIxuDQhos">PreviewsVideos</a>
-<p class="explication">Permet de découper des vidéos en vidéos plus petites, pour reposter sur des réseaux sociaux autres que YouTube</p>
-</li>
-<li class="categorie"><a href="https://youtu.be/LmUIn0TPrWU">Backup To USB</a>
-<p class="explication">Permet de copier des fichiers d'une clé USB sur un autre support, même si elle change de lettre de lecteur.</p>
-</li>
-</ul>
-
-
-<h1>Scripts BATCHS (en vidéo)</h1>
+<!--Categorie-->
+<div class="container">
+<h1>Batch (en vidéo youtube)</h1>
 <ul class="liencategories">
 <li class="categorie"><a href="https://youtu.be/kS7CXsy0jhw">Mean Time To Shutdown</a>
-<p class="explication">Permet de programmer l'extinction de l'ordinateur à la minute près et permet d'annuler l'opération si nécéssaire.</p>
+<p class="explication">Permet de programmer l'extinction de l'ordinateur à la minute près.</p>
 </li>
 </ul>
-
-<h1>Documents (en vidéo)</h1>
-<ul class="liencategories">
-<li class="categorie"><a href="https://youtu.be/25z6gRiEBLs">Répertoire téléphonique "intelligent"</a>
-<p class="explication">A permis d'améliorer le répertoire téléphonique de l'entreprise basé sur un simple tableur, en un puissant moteur de recherche</p>
-</li>
-</ul>
+</div>
+<!--Fin de categorie-->
 
 
-<h1>Projets WEB</h1>
-<ul class="liencategories">
-<li class="categorie"><a href="/CalculateurDeSalaire/CalculateurDeSalaire.html">Calculateur de salaire</a>
-<p class="explication">Présente un calculateur de salaire pour employé qui calcule le salaire brut et net, ainsi que le pourcentage d'activité et les divers cotisations</br></br><b>[Les taux ont été fixés dans le script.]</b></p>
-</li>
-
-<li class="categorie"><a href="/EasyConnect/EasyConnect.html">EasyConnect</a>
-<p class="explication">Tableau de liens internet, qui s'adaptera à tout écran, fixe ou mobile, en déplacant les cases selon l'espace disponible. </br></br><b>[Essayez de réduire la fenêtre du navigateur en tenant la fenêtre !]</b></p>
-</li>
-
-<li class="categorie"><a href="/LesMainsEtLame/index.html">Les Mains et l'Ame</a>
-<p class="explication">Projet de page web statique, pour une cliente privée</p>
-</li>
-
-<li class="categorie"><a href="/MoteurRechercheMultisite/index.html">Moteur de recherche multi-site</a>
-<p class="explication">Utilitaire utilisé pour répondre à un problème persistant, qui nous obligeait à parcourir et rechercher des covers de films sur différents sites.
-</br></br> L'utilitaire prend la variable de la recherche et l'applique aux multiples catalogues et fonctions de recherches des sites pré-enregistrés.</p>
-</li>
-
-<li class="categorie"><a href="/Stargate/index.html">Stargate</a>
-<p class="explication">Recréation de la Porte des étoiles, de la série télévisée du même nom. </br>Avec une console qui permet d'entre des coordonnées et ouvrir la porte sur une destination pré-enregistrée.
-</br></br><b>[Le point d'origine, c'est le premier symbole : la pyramide avec la lune]</b></p>
-</li>
-
-<li class="categorie"><a href="/SystemeSolaire/index.html">Systeme Solaire</a>
-<p class="explication">Recréation du système solaire en HTML/CSS, amélioration d'un ancien projet Codeacedmy qui ne faisait que la rotation terre-lune-soleil. 
-</br></br><b>[Dezoomez au maximum pour tout voir !]</b></p>
-</li>
+<!--Categorie-->
+<div class="container">
+    <h1>Documents (en vidéo youtube)</h1>
+    <ul class="liencategories">
+    <li class="categorie"><a href="https://youtu.be/25z6gRiEBLs">Répertoire téléphonique "intelligent"</a>
+    <p class="explication">A permis de révolutionner le répertoire téléphonique de l'entreprise.</p>
+    </li>
+    </ul>
+    </div>
+    <!--Fin de categorie-->
 
 
 
 
-</ul></ul>
 
 
-
-
-</nav>
-
+</div> <!--UberContainer-->
 </body>
 </html>
