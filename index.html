@@ -42,7 +42,565 @@ else {x2.style.display = "none";}
 
 html, body {
 width:100%;
+height:100%;<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+	<title>CV : Alain Philip Despont</title>
+	<meta name="keywords" content="alain despont curriculum vitae"/>
+	<meta name="description" content="Site web personnel / Curriculum Vitae"/>
+	<meta name="author" content="Alain Philip Despont"/>
+	<link rel="icon" type="image/x-icon" href="favicon.ico?"/>
+
+<script>
+	function reset() {
+	document.getElementById('art1').style.display = "none";
+	document.getElementById('art2').style.display = "none";
+    location.reload(true);
+};
+
+function art1(){
+var x1 = document.getElementById("art1");
+var x2 = document.getElementById("art2");
+if (x1.style.display === "none"){
+	x1.style.display = "block";
+	x2.style.display = "none";
+	}
+else {x1.style.display = "none";}
+}
+
+
+function art2(){
+var x1 = document.getElementById("art1");
+var x2 = document.getElementById("art2");
+if (x2.style.display === "none"){
+	x1.style.display = "none";
+	x2.style.display = "block";
+	}
+else {x2.style.display = "none";}
+}
+
+</script>
+
+<style>
+
+html, body {
+width:100%;
 height:100%;
+min-width: 320px;
+min-height:480px;
+margin: 0;
+padding: 0;
+background-color: light-grey;
+text-align:center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1em;
+font-weight: inherit;
+font-style: inherit;
+text-decoration: inherit;
+}
+
+body {
+min-width: 320px;
+min-height:480px;
+max-width:1024px;
+max-height:600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+hr {
+margin-top:20px;
+margin-bottom:20px;
+max-width:94%;
+}
+
+footer {
+float:left;
+width:100%;
+min-width: 320px;
+}
+
+nav ul {
+padding:0px;
+}
+
+nav li {
+display:inline-block;
+min-width: 140px;
+text-align:center;
+margin: auto;
+margin-top:0px;
+margin-bottom:0px;
+padding: 20px;
+font-size: 1.4em;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-style: inherit;
+text-decoration: inherit;
+box-shadow: 0px 8px 10px #000000;
+border:outset 3px #000000;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+}
+
+nav li:hover{
+	background-color:lightgrey;
+}
+article {
+text-align:left;
+background-color: light-grey;
+background: light-grey;
+min-height:200px;
+margin: auto;
+margin-top:0px;
+margin-bottom:30px;
+padding: auto;
+padding-top:2px;
+padding-left:20px;
+font-size: 1.3em;
+font-weight: inherit;
+font-family: Arial, Helvetica, sans-serif;
+font-style: inherit;
+text-decoration: inherit;
+box-shadow: 10px 8px 46px #000000;
+border:outset 3px #000000;
+border-top-left-radius:30px;
+border-top-right-radius:15px;
+border-bottom-left-radius:15px;
+border-bottom-right-radius:30px;
+}
+
+td.lien{
+min-width:400px;
+padding-top:10px;
+padding-bottom:10px;
+}
+
+td.explication{
+	font-size: 0.7em;
+}
+
+a{
+	text-decoration: none;
+}
+
+td a{
+	text-decoration: none;
+    background-color: #deb88775;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    float: left;
+	}
+
+	td a:hover{
+		background-color: #deb887;
+	}
+
+
+
+li.CertFinie {
+border:1px solid;
+margin:5px;
+padding:5px;
+font-size:15px;
+background-color:rgb(0, 177, 15);
+border-radius:15px;
+color:rgb(0, 0, 0);
+float:left;
+width:auto;
+}
+
+li.CertEtude{
+border:1px solid;
+margin:5px;
+padding:5px;
+font-size:15px;
+background-color:#ff8965;
+border-radius:15px;
+float:left;
+width:auto;
+}
+
+li.CertFuture{
+border:1px solid;
+margin:5px;
+padding:5px;
+font-size:15px;
+background-color:#c3c4c7;
+border-radius:15px;
+float:left;
+width:auto;
+}
+
+li.CertNope{
+border:0px solid;
+margin:5px;
+padding:5px;
+font-size:15px;
+background-color:transparent;
+border-radius:15px;
+color:grey;
+float:left;
+width:auto;
+}
+
+li.CertNopeMini{
+border:1px solid;
+margin:5px;
+padding:5px;
+font-size:15px;
+background-color:transparent;
+border-radius:15px;
+color:grey;
+}
+
+ul.CertPlan{
+background-color:none;
+margin: 0;
+padding-left: 0px;
+display:inline-flex;
+list-style: none;
+font-weight: bold;
+text-align: center;
+display: inline-table;
+}
+
+
+
+
+</style>
+</head>
+
+<header>
+	<div id="header">
+	<h1>Alain Despont - Portfolio</h1>
+	</div>
+</header>
+
+
+<nav>
+	<ul>
+	<a href="https://alaindespont.github.io/" onClick="reset()"><li>Accueil</li></a>
+	<a href="/DESPONT_Alain_CurriculumVitae.pdf"><li>Curriculum Vitae</li></a>
+	<a href="#" onClick="art2()"><li>Certifications</li></a>
+	<a href="https://github.com/alaindespont?tab=repositories"><li>GitHub</li></a>
+	</ul>
+</nav>
+
+<body>
+<section>
+
+
+
+
+
+
+
+<div id="art1" style="display:block;">
+<article>
+
+
+<h3>Scripts PowerShell</h3>
+<table>
+
+<tr>
+<td class="lien"><a href="https://youtu.be/sxFI3Qp2sNA">[Vidéo] Test de connectivité</a></td>
+<td class="explication">Permet un diagnostique rapide de la connectivité réseau.</td>
+</tr>	
+
+<tr>
+<td class="lien"><a href="https://youtu.be/egR4FQxxT3c">[Vidéo] Listing de programmes installés</a></td>
+<td class="explication">Extrait une liste des programmes installés.</td>
+</tr>	
+
+<tr>
+    <td class="lien"><a href="https://youtu.be/zuvCNPIKRXA">[Vidéo] Test de groupe de disponibilité SQL Server</a></td>
+    <td class="explication">Permet de tester la balance de charge sur un groupe de disponibilité.</td>
+    </tr>	
+
+
+<tr>
+    <td class="lien"><iframe width="280" height="155" src="https://www.youtube.com/embed/zuvCNPIKRXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </td>
+        <td class="explication">Permet de tester la balance de charge sur un groupe de disponibilité.</td>
+    </tr>    
+    
+
+<tr>
+<td class="lien"><a href="https://youtu.be/tMxIxuDQhos">[Vidéo] Preview Videos</a></td>
+<td class="explication">Permet de découper des vidéos en vidéos plus petites, pour reposter sur des réseaux sociaux.</td>
+</tr>	
+
+<tr>
+<td class="lien"><a href="https://youtu.be/LmUIn0TPrWU">[Vidéo] Backup To USB</a></td>
+<td class="explication">Permet de copier des fichiers d'une clé USB sur un autre support.</td>
+</tr>	
+
+</table>	
+<!--BARRE-->
+<hr /><!--BARRE-->
+<!--BARRE-->
+
+
+
+<h3>Projets Web</h3>
+<table>
+
+<tr>
+<td class="lien"><a href="/CalculateurDeSalaire/CalculateurDeSalaire.html">Calculateur de salaire</a></td>
+<td class="explication">Calculateur de salaire pour employé.</td>
+</tr>	
+
+<tr>
+<td class="lien"><a href="/EasyConnect/EasyConnect.html">Easy Connect</a></td>
+<td class="explication">Dashboard de liens internet.</td>
+</tr>	
+
+<tr>
+<td class="lien"><a href="/MoteurRechercheMultisite/index.html">Moteur de recherche multi-site</a></td>
+<td class="explication">Utilitaire de recherche.</td>
+</tr>	
+
+<tr>
+<td class="lien"><a href="/Stargate/index.html">Stargate</a></td>
+<td class="explication">Recréation de la Porte des étoiles de la série de science-fiction.</td>
+</tr>	
+
+<tr>
+<td class="lien"><a href="/SystemeSolaire/index.html">Système Solaire</a></td>
+<td class="explication">Simulation du système solaire.</td>
+</tr>	
+
+</table>	
+<!--BARRE-->
+<hr /><!--BARRE-->
+<!--BARRE-->
+
+
+<h3>Batch</h3>
+<table>
+
+<tr>
+<td class="lien"><a href="https://youtu.be/kS7CXsy0jhw">[Vidéo] Mean Time To Shutdown</a></td>
+<td class="explication">Permet de programmer l'extinction de l'ordinateur à la minute près.</td>
+</tr>	
+
+
+</table>	
+<!--BARRE-->
+<hr /><!--BARRE-->
+<!--BARRE-->
+
+
+<h3>Documents</h3>
+<table>
+
+<tr>
+<td class="lien"><a href="https://youtu.be/25z6gRiEBLs">[Vidéo] Répertoire téléphonique intelligent</a></td>
+<td class="explication">A permis de remplacer le répertoire téléphonique excel de l'entreprise.</td>
+</tr>	
+
+
+</table>	
+<!--BARRE-->
+<hr /><!--BARRE-->
+<!--BARRE-->
+
+
+</article>
+</div>
+
+
+
+
+
+<div id="art2" style="display:none;">
+	<article>
+		<h3>Vérifier mes certifications en ligne</h3>
+		<table>
+
+			<tr>
+			<td class="lien"><a href="https://www.youracclaim.com/users/alain-despont/badges">Acclaim</a></td>
+			<td class="explication">Pour la majorité de mes certifications</td>
+			</tr>	
+
+			<tr>
+			<td class="lien"><a href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000474190/4et4kdqmn2">Linux Professional Institute</a></td>
+			<td class="explication">Pour Linux Essentials</td>
+			</tr>	
+		</table>
+	
+	</article>
+
+
+
+
+
+
+
+<article>
+<h3>Mon plan de certification</h3>
+	
+<h5>Légende :</h5>
+<ul class="CertPlan">		
+	<li class="CertFinie">OBTENUE !</li>
+	<li class="CertEtude">EN ETUDE</li>
+	<li class="CertFuture">PROJET</li>
+	<li class="CertNope">PAS PREVU</li>
+</ul></br></br></br>
+
+
+<table><tr><td class="lien"><a href="https://www.comptia.org/content/it-careers-path-roadmap/it-support-specialist">CompTIA (Computing Technology Industry Association)</a></td></tr></table>
+<ul class="CertPlan">
+<li class="CertFinie">ITF+</li>
+<li class="CertFinie">A+</li>
+<li class="CertFuture">Network+</li>
+<li class="CertFuture">Security+</li>
+<li class="CertFuture">Linux+</li>
+<li class="CertFuture">Server+</li>
+</ul>
+
+<!--BARRE-->
+<hr /><!--BARRE-->
+<!--BARRE-->
+
+<table><tr><td class="lien"><a href="https://www.lpi.org/our-certifications/summary-of-certifications">LPI (Linux Professional Institute)</a></td></tr></table>
+<ul class="CertPlan">
+<li class="CertFinie">LPI Essentials</li>
+<li class="CertFuture">LPIC-1</li>
+<li class="CertNope">LPIC-2</li>
+<li class="CertNope">LPIC-3</li>
+</ul>
+
+<!--BARRE-->
+<hr /><!--BARRE-->
+<!--BARRE-->
+
+<table><tr><td class="lien"><a href="#">ITIL (Information Technology Infrastructure Library)</a></td></tr></table>
+<ul class="CertPlan">
+<li class="CertFuture">ITIL Fundation</li>
+<li class="CertNope">ITIL Managing Professional</li>
+<li class="CertNope">ITIL Strategic Leader</li>
+<li class="CertNope">ITIL Master</li>
+</ul>
+
+<!--BARRE-->
+<hr /><!--BARRE-->
+<!--BARRE-->
+
+<table><tr><td class="lien"><a href="https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI">Microsoft</a></td></tr></table>
+<a>Azure</a>
+<ul class="CertPlan">
+<li class="CertFinie">Azure Fundamentals</li>
+<li class="CertFinie">Azure AI Fundamentals</li>
+<li class="CertFinie">Azure Data Fundamentals</li>
+<li class="CertFuture">Azure Administrator Associate</li>
+<li class="CertFuture">DevOps Engineer Expert</li>
+<li class="CertFuture">Azure Solutions Architect Expert</li>
+<li class="CertFuture">Azure Virtual Desktop Specialty</li>
+<li class="CertNope">Azure Developer Associate</li>
+<li class="CertNope">Azure Stack Hub Operator Associate</li>
+<li class="CertNope">Azure AI Engineer Associate</li>
+<li class="CertNope">Azure Data Engineer Associate</li>
+<li class="CertNope">Azure Database Administrator Associate</li>
+<li class="CertNope">Azure Data Scientist Associate</li>
+<li class="CertNope">Azure for SAP Workloads Specialty</li>
+<li class="CertNope">Azure IoT Developer Specialty</li>
+</ul>
+
+<!--BARRE-->
+<hr /><!--BARRE-->
+<!--BARRE-->
+
+</br><a>Microsoft 365</a>
+<ul class="CertPlan">
+<li class="CertFinie">Microsoft 365 Certified: Fundamentals</li>
+<li class="CertFinie">MD-100 -> Modern Desktop Administrator Associate</li>
+<li class="CertFuture">MD-101 -> Modern Desktop Administrator Associate</li>
+<li class="CertFuture">Messaging Administrator Associate</li>
+<li class="CertFuture">Teams Administrator Associate</li>
+<li class="CertFuture">Teams Support Engineer Associate</li>
+<li class="CertFuture">MS-100 -> Enterprise Administrator Expert</li>	
+<li class="CertFuture">MS-101 -> Enterprise Administrator Expert</li>
+<li class="CertNope">Developer Associate</li>
+</ul>
+
+<!--BARRE-->
+<hr /><!--BARRE-->
+<!--BARRE-->
+
+</br><a>Dynamics 365</a>
+<ul class="CertPlan">
+<li class="CertFinie">[Retirée] Dynamics 365 Fundamentals</li>
+<li class="CertFuture">Dynamics 365 Fundamentals (CRM)</li>
+<li class="CertFuture">Dynamics 365 Fundamentals (ERP)</li>
+<li class="CertNope">Dynamics 365 Sales Functional Consultant Associate</li>
+<li class="CertNope">Dynamics 365 Marketing Functional Consultant Associate</li>
+<li class="CertNope">Dynamics 365 Customer Service Functional Consultant Associate</li>
+<li class="CertNope">Dynamics 365 Field Service Functional Consultant Associate</li>
+<li class="CertNope">Dynamics 365 Finance Functional Consultant Associate</li>
+<li class="CertNope">Dynamics 365 Supply Chain Management, Manufacturing Functional Consultant Associate</li>
+<li class="CertNope">Dynamics 365 Supply Chain Management Functional Consultant Associate</li>
+<li class="CertNope">Dynamics 365 Commerce Functional Consultant Associate</li>
+<li class="CertNope">Dynamics 365: Finance and Operations Apps Developer Associate</li>
+<li class="CertNope">Dynamics 365: Finance and Operations Apps Solution Architect Expert</li>
+<li class="CertNope">Dynamics 365 Business Central Functional Consultant Associate</li>
+</ul>
+
+<!--BARRE-->
+<hr /><!--BARRE-->
+<!--BARRE-->
+
+</br><a>Power Plateform</a>
+<ul class="CertPlan">
+<li class="CertFinie">Power Platform Fundamentals</li>
+<li class="CertFuture">Power Platform App Maker Associate</li>
+<li class="CertNope">Power Platform Functional Consultant Associate</li>
+<li class="CertNope">Power Platform Developer Associate</li>
+<li class="CertNope">Power Platform Solution Architect Expert</li>
+<li class="CertNope">Data Analyst Associate</li>
+</ul>
+
+<!--BARRE-->
+<hr /><!--BARRE-->
+<!--BARRE-->
+
+</br><a>Security, compliance and identity</a>
+<ul class="CertPlan">
+<li class="CertFuture">Security, Compliance, and Identity Fundamentals</li>
+<li class="CertFuture">Azure Security Engineer Associate</li>
+<li class="CertFuture">Microsoft 365 Certified: Security Administrator Associate</li>
+<li class="CertNope">Security Operations Analyst Associate</li>
+<li class="CertNope">Identity and Access Administrator Associate</li>
+<li class="CertNope">Information Protection Administrator Associate</li>
+</ul>
+
+	
+</article>
+</div>
+
+
+
+
+
+
+<!-- FIN DE SECTION -->
+</section>
+<div id="footer">
+<footer>
+Site web conçu par: Alain Philip Despont, tous droits reservés.
+</footer>
+</div>
+
+
+<!-- FIN DE LA PAGE -->
+</body>
+</html>
+
 min-width: 320px;
 min-height:480px;
 margin: 0;
