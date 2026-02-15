@@ -1,0 +1,277 @@
+:root {
+  --bg: #0b1220;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #f59e0b;
+  --border: #1f2933;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.header {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtitle {
+  color: var(--muted);
+}
+
+
+.profile {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.filters button {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.filters button.active,
+.filters button:hover {
+  background-color: var(--accent);
+  color: #111827;
+}
+
+.projects {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.description {
+  color: var(--muted);
+  font-size: 0.95em;
+}
+
+.links {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.private-line {
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: var(--muted);
+}
+
+.placeholder {
+  opacity: 0.5;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 10px;
+  color: var(--muted);
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.profile-photo img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+}
+
+.profile-text {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.lang-switch button {
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 6px 10px;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  font-family: system-ui, "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
+}
+
+.lang-switch button.active {
+  background-color: var(--accent);
+}
+
+.flag-btn {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.flag-btn span {
+  display: block;
+  width: 32px;
+  height: 20px;
+}
+
+#flag-fr {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(
+    to right,
+    #0055a4 0%,
+    #0055a4 33.33%,
+    #ffffff 33.33%,
+    #ffffff 66.66%,
+    #ef4135 66.66%,
+    #ef4135 100%
+  );
+}
+
+#flag-gb {
+  aspect-ratio: 2 / 1;
+  position: relative;
+  background-color: #012169;
+  overflow: hidden;
+}
+
+#flag-gb .rect1,
+#flag-gb .rect2 {
+  height: 20%;
+  width: 125%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #ffffff;
+  overflow: hidden;
+  outline: 1px solid transparent;
+}
+
+#flag-gb .rect1 {
+  transform: translate(-50%, -50%) rotate(26.565deg);
+}
+
+#flag-gb .rect2 {
+  transform: translate(-50%, -50%) rotate(-26.565deg);
+}
+
+#flag-gb .rect1::before,
+#flag-gb .rect2::before,
+#flag-gb .rect1::after,
+#flag-gb .rect2::after {
+  content: "";
+  position: absolute;
+  height: 33%;
+  width: 50%;
+  background-color: #c8102e;
+}
+
+#flag-gb .rect1::before,
+#flag-gb .rect2::before {
+  left: 0;
+  top: 50%;
+}
+
+#flag-gb .rect1::after,
+#flag-gb .rect2::after {
+  right: 0;
+  bottom: 50%;
+}
+
+#flag-gb .rect3 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 33%;
+  background-color: #ffffff;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+#flag-gb .rect3::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  height: 60%;
+  width: 100%;
+  background-color: #c8102e;
+}
+
+#flag-gb .rect4 {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 16.66%;
+  height: 100%;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+}
+
+#flag-gb .rect5 {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  background-color: #c8102e;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+#flag-gb .flag-inner {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
