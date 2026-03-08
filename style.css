@@ -275,3 +275,52 @@ body {
   overflow: hidden;
 }
 
+
+
+
+
+
+
+.project {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Lien invisible couvrant toute la carte */
+.card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  text-decoration: none;
+}
+
+/* Image fixe */
+.project-image {
+  width: 100%;
+  height: 160px;
+  background-color: var(--accent-soft);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.project-image {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}

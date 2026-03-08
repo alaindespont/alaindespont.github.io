@@ -15,8 +15,8 @@
     <div>
       <h1 data-fr="Alain Philip Despont" data-en="Alain Philip Despont"></h1>
       <p class="subtitle"
-         data-fr="Scripts, outils et projets techniques"
-         data-en="Scripts, tools and technical projects"></p>
+         data-fr="Petit portfolio de scripts, outils et projets techniques."
+         data-en="Little portfolio of scripts, tools and technical projects."></p>
     </div>
 
 <div class="lang-switch">
@@ -52,59 +52,339 @@
   <!-- PRESENTATION -->
 <section class="profile">
   <div class="profile-photo">
-    <img src="photo.jpg" alt="Photo profil">
+    <img src="img\profile.jpg" alt="Photo profil">
   </div>
 
-  <div class="profile-text">
-    <p data-fr="Consultant Modern Workplace, spécialiste Intune (et tout ce qui à trait à la gestion des appareils en entreprise)"
-       data-en="Modern Workplace Consultant, Intune specialist (as well as all device management linked subjects in Enterprise">
-    </p>
-	<div class="links">
-      <a href="https://github.com/alaindespont">GitHub</a>
-	<a href="https://www.linkedin.com/in/alain-philip-despont">Linkedin</a>
-    </div>
+<div class="profile-text">
+  <p data-fr="Consultant Modern Workplace, spécialiste Intune (et tout ce qui a trait à la gestion des appareils en entreprise)"
+     data-en="Modern Workplace Consultant, Intune specialist (as well as all device management related subjects in enterprise)">
+  </p>
+
+  <div class="links">
+    <a href="https://github.com/alaindespont">
+      <img src="icon/github.png" alt="icone github" style="width:20%">
+      GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/alain-philip-despont">
+      <img src="icon/linkedin.png" alt="icone linkedin" style="width:20%">
+      Linkedin
+    </a>
+
+    <a href="https://www.credly.com/users/alain-despont/badges">
+      <img src="icon/credly.png" alt="icone credly" style="width:8%">
+      Credly
+    </a>
+
+
   </div>
+</div>
 
 </section>
 </header>
 
 <nav class="filters">
-  <button data-filter="all" class="active"
-          data-fr="Tous les projets publics" data-en="All publics projects"></button>
-  <button data-filter="powershell"
-          data-fr="PowerShell" data-en="PowerShell"></button>
-  <button data-filter="web"
-          data-fr="Web" data-en="Web"></button>
-  <button data-filter="docs"
-          data-fr="Documents" data-en="Documents"></button>
+  <button
+    data-filter="all" class="active"
+    data-fr="Tous les projets" data-en="All projects">
+  </button>
+  <button
+    data-filter="confidential"
+    data-fr="Tous les projets d'entreprise" data-en="All enterprise projects">
+  </button>
+  <button
+    data-filter="powershell"
+    data-fr="PowerShell" data-en="PowerShell">
+  </button>
+  <button
+    data-filter="web"
+    data-fr="Web" data-en="Web">
+  </button>
+  <button
+    data-filter="documentation"
+    data-fr="Documents" data-en="Documents">
+  </button>
+  <button
+    data-filter="spreadsheet"
+    data-fr="Batchs" data-en="Batchs">
+  </button>
+  <button
+    data-filter="sql"
+    data-fr="SQL" data-en="SQL">
+  </button>
 </nav>
 
 <main class="projects">
 
-<!-- ARTICLE NORMAL -->
-  <article class="project" data-category="powershell">
-    <h3 data-fr="Titre du projet" data-en="Project title"></h3>
-    <p class="description"
-       data-fr="Resumé du projet"
-       data-en="Summary of the project"></p>
+<!--
+###########################################################################  
+###### TEMPLATES
+###########################################################################  
+-->
 
-    <div class="links">
-      <a href="#">Lien vers le projet</a>
-    </div>
-  </article>
 
-<!-- ARTICLE CONFIDENTIEL -->
-  <article class="project private" data-category="powershell">
-    <h3 data-fr="Projet d'entreprise" data-en="Enterprise project"></h3>
-    <p class="description"
-       data-fr="Projet d'un client"
-       data-en="Client project"></p>
+<!-- ARTICLE NORMAL
+<article class="project clickable" data-category="powershell">
+  <a class="card-link" href="#" target="_blank"></a>
+  <h3 data-fr="🌍 Titre du projet" data-en="🌍 Project title"></h3>
+  <img src="img/IMG.png" class="project-image">
+  <p class="description"
+     data-fr="Resumé du projet"
+     data-en="Summary of the project"></p>
+</article>
+ -->
 
-    <div class="private-line"
-	data-fr="🔒 Confidentiel"
-       data-en="🔒 Confidential">
-</div>
-  </article>
+<!-- ARTICLE ENTREPRISE
+<article class="project private" data-category="powershell">
+  <h3 data-fr="🔒 Projet d'entreprise" data-en="🔒 Enterprise project"></h3>
+  <img src="img/IMG.png" class="project-image">
+  <p class="description"
+     data-fr="Projet d'un client"
+     data-en="Client project"></p>
+  <div class="private-line"></div>
+</article>
+ -->
+
+ <!--
+###########################################################################  
+###### BATCHS
+###########################################################################  
+-->
+
+<article class="project clickable" data-category="batch">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20Batchs/Deploiement%20silencieux" target="_blank"></a>
+  <h3 data-fr="🌍 Déploiement silencieux" data-en="🌍 Silent deployment"></h3>
+  <img src="img/deploy.png" class="project-image">
+  <p class="description"
+     data-fr="DEPLOY.bat permet d'effectuer des actions (en l'occurence de déplacer des fichiers de sauvegarde), puis de s'autodétruire afin de ne pas laisser de batch à la suite du processus."
+     data-en="DEPLOY.bat can be used to automate actions (like moving backup files) and then autodestruct itself, ensuring no batch file remains at the end of the process."></p>
+</article>
+
+
+<article class="project clickable" data-category="batch">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/blob/main/Projets%20Batchs/Effacer%20les%20fichiers%20recents/EffacerLesFichiersRecents.bat" target="_blank"></a>
+  <h3 data-fr="🌍 Effacer les fichiers récents" data-en="🌍 Delete recent files and folders"></h3>
+  <img src="img/recentfiles.png" class="project-image">
+  <p class="description"
+     data-fr="Permet de vider le cache des fichiers et dossiers récents dans l'explorateur Windows."
+     data-en="Clears the cache of recent files and folders shown in Windows Explorer."></p>
+</article>
+
+
+<article class="project clickable" data-category="batch">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/blob/main/Projets%20Batchs/MeanTimeToShutdown/MTTS.bat" target="_blank"></a>
+  <h3 data-fr="🌍 Mean Time To Shutdown" data-en="🌍 Mean Time To Shutdown"></h3>
+  <img src="img/meantimetoshutdown.png" class="project-image">
+  <p class="description"
+     data-fr="Permet de programmer l'extinction de l'ordinateur à la minute près."
+     data-en="Allows users to schedule computer shutdown to the exact minute."></p>
+</article>
+
+
+<article class="project clickable" data-category="batch">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/blob/main/Projets%20Batchs/Testeur%20de%20groupe%20de%20disponibilite%20SQL/TestAGGroupSQL.bat" target="_blank"></a>
+  <h3 data-fr="🌍 Test AG Group SQL" data-en="🌍 Test AG Group SQL"></h3>
+  <img src="img/sqltester.png" class="project-image">
+  <p class="description"
+     data-fr="Permet de tester un groupe de disponibilité SQL Server en envoyant des requêtes au listener."
+     data-en="Allows testing of an SQL Server Availability Group by sending queries to the listener."></p>
+</article>
+
+ <!--
+###########################################################################  
+###### POWERSHELLS
+###########################################################################  
+-->
+
+<article class="project clickable" data-category="powershell">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20Powershells/Backup%20to%20USB" target="_blank"></a>
+  <h3 data-fr="🌍 Backup vers USB" data-en="🌍 Backup to USB"></h3>
+  <img src="img/backuptousb.png" class="project-image">
+  <p class="description"
+     data-fr="Script PowerShell permettant d'effectuer une sauvegarde de données vers un disque USB."
+     data-en="PowerShell script used to perform data backup to an USB drive."></p>
+</article>
+
+<article class="project clickable" data-category="powershell">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20Powershells/Backup%20volume%20ordonn%C3%A9%20par%20USB" target="_blank"></a>
+  <h3 data-fr="🌍 Backup de PC" data-en="🌍 USB ordered volume backup"></h3>
+  <img src="img/backupvolume.png" class="project-image">
+  <p class="description"
+     data-fr="Automatisation de sauvegardes de volumes systèmes vers un disque USB avec organisation des données."
+     data-en="Automates volume backups to an USB drive with structured data organization."></p>
+</article>
+
+<article class="project clickable" data-category="powershell">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20Powershells/Listing%20des%20programmes%20install%C3%A9s" target="_blank"></a>
+  <h3 data-fr="🌍 Liste des programmes" data-en="🌍 Installed programs listing"></h3>
+  <img src="img/listingprogrammes.png" class="project-image">
+  <p class="description"
+     data-fr="Script PowerShell permettant d'obtenir la liste des programmes installés sur une machine."
+     data-en="PowerShell script used to list installed software on a workstation."></p>
+</article>
+
+<article class="project clickable" data-category="powershell">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20Powershells/Previews%20de%20videos" target="_blank"></a>
+  <h3 data-fr="🌍 Génération de miniatures" data-en="🌍 Video previews generation"></h3>
+  <img src="img/previewvideos.png" class="project-image">
+  <p class="description"
+     data-fr="Automatisation de la génération miniatures vidéo."
+     data-en="Automates the generation of previews for video files."></p>
+</article>
+
+<article class="project clickable" data-category="powershell">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20Powershells/Remove%20Chrome%20Favicons" target="_blank"></a>
+  <h3 data-fr="🌍 Suppression des favicons" data-en="🌍 Remove Chrome favicons"></h3>
+  <img src="img/googlecookies.png" class="project-image">
+  <p class="description"
+     data-fr="Script permettant de supprimer les favicons stockés dans le profil Google Chrome."
+     data-en="Script used to clean or remove favicons stored in the Google Chrome profile."></p>
+</article>
+
+<article class="project clickable" data-category="powershell">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20Powershells/Test%20de%20connectivit%C3%A9%20de%20station%20de%20travail" target="_blank"></a>
+  <h3 data-fr="🌍 Test de connectivité" data-en="🌍 Workstation connectivity test"></h3>
+  <img src="img/testconnectivite.png" class="project-image">
+  <p class="description"
+     data-fr="Script permettant de tester rapidement la connectivité réseau et les services essentiels d'une station de travail"
+     data-en="Script used to quickly test network connectivity and essential services on a workstation."></p>
+</article>
+
+ <!--
+###########################################################################  
+###### SQL
+###########################################################################  
+-->
+
+
+<article class="project clickable" data-category="sql">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20SQL/AuditJobs" target="_blank"></a>
+  <h3 data-fr="🌍 Audit SQL Jobs" data-en="🌍 SQL Jobs audit"></h3>
+  <img src="img/sql_auditjobs.png" class="project-image">
+  <p class="description"
+     data-fr="Scripts SQL permettant d'auditer les jobs SQL Server afin d'identifier leur état, leur configuration et leur historique d'exécution."
+     data-en="SQL scripts used to audit SQL Server jobs to review status, configuration and execution history."></p>
+</article>
+
+<article class="project clickable" data-category="sql">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20SQL/BackupJobs" target="_blank"></a>
+  <h3 data-fr="🌍 Jobs de sauvegarde SQL" data-en="🌍 SQL backup jobs"></h3>
+  <img src="img/sql_backupjobs.png" class="project-image">
+  <p class="description"
+     data-fr="Scripts SQL permettant de créer ou auditer des jobs de sauvegarde automatisés dans SQL Server."
+     data-en="SQL scripts used to manage or audit automated backup jobs in SQL Server."></p>
+</article>
+
+
+ <!--
+###########################################################################  
+###### WEB
+###########################################################################  
+-->
+
+
+<article class="project clickable" data-category="web">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20Web/CalculateurDeSalaire" target="_blank"></a>
+  <h3 data-fr="🌍 Calculateur de salaire" data-en="🌍 Salary calculator"></h3>
+  <img src="img/web_salarycalculator.png" class="project-image">
+  <p class="description"
+     data-fr="Application web permettant de calculer et simuler un salaire selon différents paramètres."
+     data-en="Web application used to simulate salary calculations based on various parameters."></p>
+</article>
+
+<article class="project clickable" data-category="web">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20Web/Easy%20Connect" target="_blank"></a>
+  <h3 data-fr="🌍 Easy Connect" data-en="🌍 Easy Connect"></h3>
+  <img src="img/web_easyconnect.png" class="project-image">
+  <p class="description"
+     data-fr="Interface web facilitant l'accès à différents services ou ressources via un portail simplifié."
+     data-en="Web interface simplifying access to services or resources through a lightweight portal."></p>
+</article>
+
+<article class="project clickable" data-category="web">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20Web/Moteur%20de%20recherche%20multi-sites" target="_blank"></a>
+  <h3 data-fr="🌍 Moteur de recherche multi-sites" data-en="🌍 Multi-site search engine"></h3>
+  <img src="img/multisearch.png" class="project-image">
+  <p class="description"
+     data-fr="Interface web permettant d'effectuer des recherches simultanément sur plusieurs sites."
+     data-en="Web interface allowing simultaneous searches across multiple websites."></p>
+</article>
+
+<article class="project clickable" data-category="web">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20Web/Stargate" target="_blank"></a>
+  <h3 data-fr="🌍 Stargate" data-en="🌍 Stargate"></h3>
+  <img src="img/stargate.png" class="project-image">
+  <p class="description"
+     data-fr="Projet web expérimental explorant des interfaces ou visualisations interactives."
+     data-en="Experimental web project exploring interactive interface concepts and navigation."></p>
+</article>
+
+<article class="project clickable" data-category="web">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20Web/Systeme%20Solaire" target="_blank"></a>
+  <h3 data-fr="🌍 Système solaire interactif" data-en="🌍 Interactive solar system"></h3>
+  <img src="img/solarsystem.png" class="project-image">
+  <p class="description"
+     data-fr="Visualisation web interactive du système solaire avec représentation des planètes."
+     data-en="Interactive web visualization of the solar system and planetary positions."></p>
+</article>
+
+
+ <!--
+###########################################################################  
+###### SPREADSHEET
+###########################################################################  
+-->
+
+<article class="project clickable" data-category="spreadsheet">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20Spreadsheets/Service%20Desk%20Mail%20Merger%20v12" target="_blank"></a>
+  <h3 data-fr="🌍 Service Desk Mail Merger" data-en="🌍 Service Desk Mail Merger"></h3>
+  <img src="img/spreadsheet_mailmerger.png" class="project-image">
+  <p class="description"
+     data-fr="Feuille de calcul permettant d'automatiser l'envoi d'emails ou la génération de messages pour un service desk."
+     data-en="Spreadsheet used to automate message generation or email merging for service desk workflows."></p>
+</article>
+
+ <!--
+###########################################################################  
+###### NON-PROGRAMMATION
+###########################################################################  
+-->
+
+<article class="project clickable" data-category="documentation">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20sans%20programmation/Dossier%20final%20IDEC" target="_blank"></a>
+  <h3 data-fr="🌍 Dossier final IDEC" data-en="🌍 IDEC final project"></h3>
+  <img src="img/doc_idec.png" class="project-image">
+  <p class="description"
+     data-fr="Documentation et dossier final réalisés dans le cadre de la formation IDEC."
+     data-en="Final documentation and project produced during the IDEC training program."></p>
+</article>
+
+<article class="project clickable" data-category="documentation">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20sans%20programmation/Lab4Tech%20Capsules" target="_blank"></a>
+  <h3 data-fr="🌍 Lab4Tech Capsules" data-en="🌍 Lab4Tech capsules"></h3>
+  <img src="img/doc_lab4tech.png" class="project-image">
+  <p class="description"
+     data-fr="Contenu pédagogique et capsules techniques liées au projet Lab4Tech."
+     data-en="Educational content and technical capsules related to the Lab4Tech project."></p>
+</article>
+
+<article class="project clickable" data-category="documentation">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20sans%20programmation/Philip%20Morris/Documentation%20rework" target="_blank"></a>
+  <h3 data-fr="🌍 Documentation rework" data-en="🌍 Documentation rework"></h3>
+  <img src="img/doc_rework.png" class="project-image">
+  <p class="description"
+     data-fr="Réorganisation et amélioration de documentation technique pour un environnement IT."
+     data-en="Technical documentation restructuring and improvement for an IT environment."></p>
+</article>
+
+<article class="project clickable" data-category="documentation">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20sans%20programmation/Philip%20Morris/ServiceNow/OnsiteITSupportDashboards" target="_blank"></a>
+  <h3 data-fr="🌍 ServiceNow IT Support dashboards" data-en="🌍 ServiceNow IT Support dashboards"></h3>
+  <img src="img/doc_servicenow.png" class="project-image">
+  <p class="description"
+     data-fr="Création de dashboards ServiceNow pour le suivi et l'analyse des activités de support IT."
+     data-en="Creation of ServiceNow dashboards used to monitor and analyze IT support activities."></p>
+</article>
 
 </main>
 
