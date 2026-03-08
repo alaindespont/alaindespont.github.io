@@ -307,4 +307,6 @@ body {
   object-fit: contain;
   display: block;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
