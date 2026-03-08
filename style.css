@@ -302,7 +302,9 @@ body {
 
 .project-image {
   width: 100%;
+  max-width: 300px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
   display: block;
+  margin: 0 auto;
 }
