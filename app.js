@@ -1,9 +1,10 @@
-// Filtrage categories
 const filterButtons = document.querySelectorAll(".filters button");
 const projects = document.querySelectorAll(".project");
 
 filterButtons.forEach(button => {
+
   button.addEventListener("click", () => {
+
     filterButtons.forEach(b => b.classList.remove("active"));
     button.classList.add("active");
 
@@ -15,9 +16,12 @@ filterButtons.forEach(button => {
           ? "block"
           : "none";
     });
+
   });
+
 });
 
+document.querySelector(".filters button.active").click();
 // Changement langue
 const langButtons = document.querySelectorAll(".lang-switch button");
 const translatables = document.querySelectorAll("[data-fr]");
