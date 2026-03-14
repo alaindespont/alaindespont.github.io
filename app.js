@@ -43,4 +43,3 @@ langButtons.forEach(button => {
     setLanguage(button.dataset.lang);
   });
 });
-

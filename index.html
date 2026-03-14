@@ -15,8 +15,8 @@
     <div>
       <h1 data-fr="Alain Philip Despont" data-en="Alain Philip Despont"></h1>
       <p class="subtitle"
-         data-fr="Petit portfolio de scripts, outils et projets techniques."
-         data-en="Little portfolio of scripts, tools and technical projects."></p>
+         data-fr="Portfolio"
+         data-en="Portfolio"></p>
     </div>
 
 <div class="lang-switch">
@@ -49,40 +49,142 @@
 
   </div>
 
-  <!-- PRESENTATION -->
-<section class="profile">
-  <div class="profile-photo">
-    <img src="img\profile.jpg" alt="Photo profil">
-  </div>
+<!-- PROFILE -->
+<section class="profile-card">
+
+  <div class="profile-top">
+    <div class="profile-photo">
+      <img src="img/profile.jpg" alt="Photo profil">
+    </div>
 
 <div class="profile-text">
-  <p data-fr="Consultant Modern Workplace, spécialiste Intune (et tout ce qui a trait à la gestion des appareils en entreprise)"
-     data-en="Modern Workplace Consultant, Intune specialist (as well as all device management related subjects in enterprise)">
+
+  <p 
+  data-fr="Consultant Modern Workplace, spécialisé dans la gestion moderne des postes de travail et des appareils d’entreprise."
+  data-en="Modern Workplace Consultant specialized in modern workstation and enterprise device management.">
   </p>
 
-  <div class="links">
+  <p 
+  data-fr="Je travaille principalement avec Microsoft Intune, l’écosystème Microsoft 365 et les environnements hybrides mêlant Active Directory, Entra ID. Mon focus est la gestion d'appareils et la sécurité."
+  data-en="I mainly work with Microsoft Intune, the Microsoft 365 ecosystem, and hybrid environments combining Active Directory, Entra ID. My focus is device manangement and security">
+  </p>
 
+  <p 
+  data-fr="Ce portfolio présente une sélection de scripts, outils et projets techniques que j’ai développés pour automatiser, documenter ou simplifier des tâches IT."
+  data-en="This portfolio presents a selection of scripts, tools and technical projects I developed to automate, document or simplify IT tasks.">
+  </p>
+
+</div>
+  </div>
+
+  <div class="links">
     <a href="https://www.linkedin.com/in/alain-philip-despont">
-      <img src="icon/linkedin.png" alt="icone linkedin" style="width:20%">
+      <img src="icon/linkedin.png">
       Linkedin
     </a>
 
     <a href="https://github.com/alaindespont">
-      <img src="icon/github.png" alt="icone github" style="width:20%">
+      <img src="icon/github.png">
       GitHub
     </a>
 
     <a href="https://www.credly.com/users/alain-despont/badges">
-      <img src="icon/credly.png" alt="icone credly" style="width:8%">
+      <img src="icon/credly.png">
       Credly
+    </a>
+
+    <a href="mailto:alain.despont@bechtle.com">
+      <img src="icon/shipment-svgrepo-com.svg">
+      Envoyer un email
+    </a>
+
+    <a href="downloads/Alain Philip Despont.vcf">
+      <img src="icon/phonebook-svgrepo-com.svg">
+      Enregistrer mon contact
     </a>
 
 
   </div>
-</div>
 
 </section>
-</header>
+
+
+<!-- CERTIFICATIONS -->
+<section class="profile-card">
+
+  <p class="cert-title">Certifications</p>
+
+  <div class="certifications">
+
+    <div class="cert-badge">
+      <img src="icon/microsoft-certified-expert-badge.svg" class="cert-icon">
+      <span class="cert-count">1</span>
+      <div class="tooltip">
+        Administrator Expert
+      </div>
+    </div>
+
+    <div class="cert-badge">
+      <img src="icon/microsoft-certified-associate-badge.svg" class="cert-icon">
+      <span class="cert-count">2</span>
+      <div class="tooltip">
+        Modern Desktop Administrator Associate<br>
+        Identity and Access Administrator Associate
+    </div>
+    </div>
+
+    <div class="cert-badge">
+      <img src="icon/microsoft-certified-fundamentals-badge.svg" class="cert-icon">
+      <span class="cert-count">7</span>
+      <div class="tooltip">
+        365 Fundamentals<br>
+        Azure Fundamentals<br>
+        Security, Compliance, and Identity Fundamentals<br>
+        Power Platform Fundamentals<br>
+        Azure Data Fundamentals<br>
+        Dynamics 365 Fundamentals<br>
+        Azure AI Fundamentals
+      </div>
+    </div>
+
+    <div class="cert-badge">
+      <img src="icon/apple-logo-svgrepo-com.png" class="cert-icon">
+      <span class="cert-count">1</span>
+      <div class="tooltip">
+        Apple Certified IT Professional
+      </div>
+    </div>
+
+    <div class="cert-badge">
+      <img src="icon/JAMF.svg" class="cert-icon">
+      <span class="cert-count">1</span>
+      <div class="tooltip">
+        Jamf Pro Associate Exam
+      </div>
+    </div>
+
+    <div class="cert-badge">
+      <img src="icon/lpi.png" class="cert-icon">
+      <span class="cert-count">1</span>
+      <div class="tooltip">
+        Linux Essentials Certificate
+      </div>
+    </div>
+
+    <div class="cert-badge">
+      <img src="icon/Comptia.svg" class="cert-icon comptia">
+      <span class="cert-count">4</span>
+      <div class="tooltip">
+        IT Fundamentals+<br>
+        A+ <br>
+        Network+<br>
+        Security+
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
 <nav class="filters">
   <button
@@ -91,32 +193,27 @@
   </button>
   <button
     data-filter="confidential"
-    data-fr="Tous les projets d'entreprise" data-en="All enterprise projects">
+    data-fr="Projets d'entreprise | Non-publics" data-en="Enterprise projects | Non-public"><span class="count"></span>
   </button>
   <button
     data-filter="powershell"
-    data-fr="PowerShell" data-en="PowerShell">
+    data-fr="PowerShell" data-en="PowerShell"><span class="count"></span>
   </button>
   <button
     data-filter="web"
-    data-fr="Web" data-en="Web">
+    data-fr="Web" data-en="Web"><span class="count"></span>
   </button>
   <button
     data-filter="documentation"
-    data-fr="Non-programmation" data-en="Non-programmation">
+    data-fr="Non-programmation" data-en="Non-programmation"><span class="count"></span>
   </button>
   <button
     data-filter="spreadsheet"
-    data-fr="VBA & Spreadsheet" data-en="VBA & Spreadsheet">
+    data-fr="VBA & Spreadsheet" data-en="VBA & Spreadsheet"><span class="count"></span>
   </button>
   <button
     data-filter="batch"
-    data-fr="Batchs" data-en="Batchs">
-  </button>
-
-  <button
-    data-filter="Automations"
-    data-fr="Automatisations" data-en="Automations">
+    data-fr="Batchs" data-en="Batchs"><span class="count"></span>
   </button>
 </nav>
 
@@ -372,8 +469,8 @@
   <h3 data-fr="🌍 Service Desk Mail Merger" data-en="🌍 Service Desk Mail Merger"></h3>
   <img src="img/mailmerger.png" class="project-image">
   <p class="description"
-     data-fr="Feuille de calcul permettant d'automatiser l'envoi d'emails ou la génération de messages pour un service desk."
-     data-en="Spreadsheet used to automate message generation or email merging for service desk workflows."></p>
+     data-fr="Vrai application de suivi des mails de relance d'un service desk. Basée sur un tableur Excel couplé à des macros VBA, l'application permet de suivre dans le temps des renvoi de mails, afin de s'assure que les utilisateurs récupèrent bien leur nouveau matériel."
+     data-en="True application to follow mail sending for a Service Desk. Base on an Excel spreadsheet with VBA macros, the app ensure following mails werre sent unitl users recover their new hardware."></p>
 </article>
 
  <!--
@@ -381,15 +478,6 @@
 ###### NON-PROGRAMMATION
 ###########################################################################  
 -->
-
-<article class="project clickable" data-category="documentation">
-  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20sans%20programmation/Dossier%20final%20IDEC" target="_blank"></a>
-  <h3 data-fr="🌍 Dossier final IDEC" data-en="🌍 IDEC final project"></h3>
-  <img src="img/diplome.png" class="project-image">
-  <p class="description"
-     data-fr="Documentation et dossier final réalisés dans le cadre de la formation IDEC."
-     data-en="Final documentation and project produced during the IDEC training program."></p>
-</article>
 
 <article class="project clickable" data-category="documentation">
   <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20sans%20programmation/Philip%20Morris/Documentation%20rework" target="_blank"></a>
@@ -416,6 +504,15 @@
   <p class="description"
      data-fr="Création de dashboards ServiceNow pour le suivi et l'analyse des activités de support IT."
      data-en="Creation of ServiceNow dashboards used to monitor and analyze IT support activities."></p>
+</article>
+
+<article class="project clickable" data-category="documentation">
+  <a class="card-link" href="https://github.com/alaindespont/AD-PUBLIC/tree/main/Projets%20sans%20programmation/Dossier%20final%20IDEC" target="_blank"></a>
+  <h3 data-fr="🌍 Dossier final IDEC" data-en="🌍 IDEC final project"></h3>
+  <img src="img/diplome.png" class="project-image">
+  <p class="description"
+     data-fr="Documentation et dossier final réalisés dans le cadre de la formation IDEC."
+     data-en="Final documentation and project produced during the IDEC training program."></p>
 </article>
 
 
