@@ -1,0 +1,22 @@
+name: "Gestionnaire de stock"
+description: "Application personnelle de gestion de stock"
+version: "1.0.0"
+slug: "stock_manager"
+
+init: false
+
+arch:
+  - aarch64
+
+startup: application
+boot: auto
+
+ports:
+  3000/tcp: 3000
+
+ports_description:
+  3000/tcp: "Interface Web"
+
+webui: "http://[HOST]:[PORT:3000]"
+
+schema: false

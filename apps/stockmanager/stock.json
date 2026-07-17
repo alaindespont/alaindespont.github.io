@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-16T08:46:26.557Z",
+  "categories": [
+    {
+      "id": "pates-pains",
+      "name": "Pâtes & Pains",
+      "color": "#ffbd94"
+    },
+    {
+      "id": "legumes",
+      "name": "Légumes",
+      "color": "#39fe5d"
+    },
+    {
+      "id": "fruits",
+      "name": "Fruits",
+      "color": "#ffdd00"
+    },
+    {
+      "id": "viande-poissons",
+      "name": "Viande & Poissons",
+      "color": "#dd225a"
+    },
+    {
+      "id": "chocolats-biscuits",
+      "name": "Chocolats & Biscuits",
+      "color": "#85caff"
+    },
+    {
+      "id": "hygiene-maison",
+      "name": "Hygiène & Santé",
+      "color": "#8e6cb2"
+    },
+    {
+      "id": "categorie-8",
+      "name": "Produits ménagers",
+      "color": "#666666"
+    }
+  ],
+  "items": [
+    {
+      "id": "spaghetti",
+      "category": "pates-pains",
+      "name": "Spaghetti",
+      "expiry": "2 ans",
+      "targetQuantity": 5,
+      "currentQuantity": 5,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "cornettes",
+      "category": "pates-pains",
+      "name": "Cornettes",
+      "expiry": "2 ans",
+      "targetQuantity": 5,
+      "currentQuantity": 5,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "rosti",
+      "category": "pates-pains",
+      "name": "Rösti",
+      "expiry": "1 année",
+      "targetQuantity": 5,
+      "currentQuantity": 5,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "riz",
+      "category": "pates-pains",
+      "name": "Riz",
+      "expiry": "2 ans",
+      "targetQuantity": 1,
+      "currentQuantity": 1,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "nouilles-instantanees",
+      "category": "pates-pains",
+      "name": "Nouilles instantanées",
+      "expiry": "1 an",
+      "targetQuantity": 6,
+      "currentQuantity": 6,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "pain-sec",
+      "category": "pates-pains",
+      "name": "Pain sec",
+      "expiry": "1 année",
+      "targetQuantity": 5,
+      "currentQuantity": 5,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "risotto-champignons-2",
+      "category": "pates-pains",
+      "name": "Risotto - Champignons (2)",
+      "expiry": "2 ans",
+      "targetQuantity": 5,
+      "currentQuantity": 3,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "risotto-milanese-2",
+      "category": "pates-pains",
+      "name": "Risotto - Milanese (2)",
+      "expiry": "2 ans",
+      "targetQuantity": 5,
+      "currentQuantity": 3,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "mais-en-pot",
+      "category": "legumes",
+      "name": "Maïs en pot",
+      "expiry": "1 année",
+      "targetQuantity": 4,
+      "currentQuantity": 4,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "cornichons-en-pot",
+      "category": "legumes",
+      "name": "Cornichons en pot",
+      "expiry": "1 année",
+      "targetQuantity": 4,
+      "currentQuantity": 4,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "olives-en-pot",
+      "category": "legumes",
+      "name": "Olives en pot",
+      "expiry": "1 année",
+      "targetQuantity": 4,
+      "currentQuantity": 4,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "haricots-blancs",
+      "category": "legumes",
+      "name": "Haricots blancs",
+      "expiry": "2 ans",
+      "targetQuantity": 4,
+      "currentQuantity": 4,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "champignons-de-paris",
+      "category": "legumes",
+      "name": "Champignons de paris",
+      "expiry": "2 ans",
+      "targetQuantity": 4,
+      "currentQuantity": 4,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "salade-russe",
+      "category": "legumes",
+      "name": "Salade russe",
+      "expiry": "2 ans",
+      "targetQuantity": 4,
+      "currentQuantity": 4,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "mais-en-boite",
+      "category": "legumes",
+      "name": "Maïs en boite",
+      "expiry": "1 année",
+      "targetQuantity": 4,
+      "currentQuantity": 4,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "tomates-hachees",
+      "category": "legumes",
+      "name": "Tomates hachées",
+      "expiry": "2 ans",
+      "targetQuantity": 4,
+      "currentQuantity": 4,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "petits-pois",
+      "category": "legumes",
+      "name": "Petits pois",
+      "expiry": "2 ans",
+      "targetQuantity": 5,
+      "currentQuantity": 5,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "cocktail-de-fruits",
+      "category": "fruits",
+      "name": "Cocktail de fruits",
+      "expiry": "2 ans",
+      "targetQuantity": 4,
+      "currentQuantity": 1,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "sauces-pour-pates",
+      "category": "viande-poissons",
+      "name": "Sauces pour pates",
+      "expiry": "1 année",
+      "targetQuantity": 25,
+      "currentQuantity": 25,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "goulash-de-boeuf",
+      "category": "viande-poissons",
+      "name": "Goulash de boeuf",
+      "expiry": "10 ans",
+      "targetQuantity": 10,
+      "currentQuantity": 10,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "thon-en-boite",
+      "category": "viande-poissons",
+      "name": "Thon en boite",
+      "expiry": "10 ans",
+      "targetQuantity": 24,
+      "currentQuantity": 22,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "cafe",
+      "category": "chocolats-biscuits",
+      "name": "Café",
+      "expiry": "2 ans",
+      "targetQuantity": 5,
+      "currentQuantity": 4,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "plaque-de-chocolat-noir",
+      "category": "chocolats-biscuits",
+      "name": "Plaque de chocolat noir",
+      "expiry": "2 ans",
+      "targetQuantity": 2,
+      "currentQuantity": 3,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "sacs-poubelles",
+      "category": "categorie-8",
+      "name": "Sacs poubelles",
+      "expiry": "Infini",
+      "targetQuantity": 3,
+      "currentQuantity": 2,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "papier-toilette",
+      "category": "hygiene-maison",
+      "name": "Papier toilette",
+      "expiry": "Infini",
+      "targetQuantity": 4,
+      "currentQuantity": 4,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "savon",
+      "category": "hygiene-maison",
+      "name": "Savon liquide pour main",
+      "expiry": "Infini",
+      "targetQuantity": 2,
+      "currentQuantity": 0,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "dentifrice",
+      "category": "hygiene-maison",
+      "name": "Dentifrice",
+      "expiry": "2 ans",
+      "targetQuantity": 6,
+      "currentQuantity": 6,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "gel-douche",
+      "category": "hygiene-maison",
+      "name": "Gel douche (1l)",
+      "expiry": "Infini",
+      "targetQuantity": 3,
+      "currentQuantity": 3,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "shampooing",
+      "category": "hygiene-maison",
+      "name": "Shampooing",
+      "expiry": "Infini",
+      "targetQuantity": 2,
+      "currentQuantity": 2,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "deodorant",
+      "category": "hygiene-maison",
+      "name": "Déodorant",
+      "expiry": "2 ans",
+      "targetQuantity": 6,
+      "currentQuantity": 3,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "papier-cuisson",
+      "category": "categorie-8",
+      "name": "Papier cuisson",
+      "expiry": "Infini",
+      "targetQuantity": 4,
+      "currentQuantity": 4,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "papier-aluminium",
+      "category": "categorie-8",
+      "name": "Papier aluminium",
+      "expiry": "Infini",
+      "targetQuantity": 4,
+      "currentQuantity": 4,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "lessive",
+      "category": "categorie-8",
+      "name": "Lessive",
+      "expiry": "Infini",
+      "targetQuantity": 2,
+      "currentQuantity": 1,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "produit-vaisselle",
+      "category": "categorie-8",
+      "name": "Produit vaisselle",
+      "expiry": "Infini",
+      "targetQuantity": 2,
+      "currentQuantity": 1,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "pastilles-lave-vaisselle",
+      "category": "categorie-8",
+      "name": "Pastilles lave-vaisselle",
+      "expiry": "Infini",
+      "targetQuantity": 2,
+      "currentQuantity": 1,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "sel-lave-vaisselle",
+      "category": "categorie-8",
+      "name": "Sel lave-vaisselle",
+      "expiry": "Infini",
+      "targetQuantity": 1,
+      "currentQuantity": 1,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "nettoyant-wc",
+      "category": "categorie-8",
+      "name": "Nettoyant WC",
+      "expiry": "Infini",
+      "targetQuantity": 1,
+      "currentQuantity": 1,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "eponges",
+      "category": "categorie-8",
+      "name": "Paquets d'éponges jetables",
+      "expiry": "Infini",
+      "targetQuantity": 3,
+      "currentQuantity": 3,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "nouvel-objet",
+      "category": "chocolats-biscuits",
+      "name": "Boites de barres de créréales",
+      "expiry": "1 année",
+      "targetQuantity": 8,
+      "currentQuantity": 6,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "nouvel-objet-2",
+      "category": "hygiene-maison",
+      "name": "Rasoirs jetables (12x pack de 8)",
+      "expiry": "Infini",
+      "targetQuantity": 12,
+      "currentQuantity": 10,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "creme-vanille-stadler",
+      "category": "chocolats-biscuits",
+      "name": "Crème vanille Stadler",
+      "expiry": "1 année",
+      "targetQuantity": 2,
+      "currentQuantity": 2,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "creme-chocolat-stadler",
+      "category": "chocolats-biscuits",
+      "name": "Crème chocolat Stadler",
+      "expiry": "2 ans",
+      "targetQuantity": 2,
+      "currentQuantity": 1,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "grande-boite-de-haricots-verts",
+      "category": "legumes",
+      "name": "Grande boite de haricots verts",
+      "expiry": "2 ans",
+      "targetQuantity": 4,
+      "currentQuantity": 1,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "brosses-a-dents-au-total",
+      "category": "hygiene-maison",
+      "name": "Brosses à dents (au total)",
+      "expiry": "Infini",
+      "targetQuantity": 15,
+      "currentQuantity": 16,
+      "lastControl": "2026-07-16"
+    },
+    {
+      "id": "mousse-a-raser",
+      "category": "hygiene-maison",
+      "name": "Mousse à raser",
+      "expiry": "1 année",
+      "targetQuantity": 2,
+      "currentQuantity": 2,
+      "lastControl": "2026-07-04"
+    },
+    {
+      "id": "savon-en-bloc-solide",
+      "category": "hygiene-maison",
+      "name": "Savon en bloc solide",
+      "expiry": "Infini",
+      "targetQuantity": 2,
+      "currentQuantity": 2,
+      "lastControl": "2026-07-04"
+    }
+  ]
+}
